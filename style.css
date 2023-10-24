@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+  
+    background-color: #aeadad;
+  
+    font-family: 'Open Sans', sans-serif;
+    color: white; 
+  }
+  
+  .calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 15px;
+  
+    padding: 15px;
+    text-align: center;
+  }
+  
+  #resoult {
+    width: 217px;
+    height: 40px;
+  
+    margin: 8px auto;
+    padding: 5px;
+  
+    background-color: white;
+    border-radius: 10px;
+  
+    font-size: 25px;
+    color: #000;
+    text-align: right;
+  }
+  
+  button {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 10px;
+  
+    font-size: 25px;
+    color: white;
+  
+    background-color: #1f1f1f;
+    border: none;
+  
+    margin: 2px;
+  }
+  
+  button:hover {
+    background-color: #d8d6eb;
+    cursor: pointer;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    font-size: 12px;
+    color: #616161;
+  
+    opacity: .7;
+    transition: 300ms;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #616161;
+  }
+  
+  footer:hover {
+    opacity: 1;
+  }
+
+  
+
+
+
+
+
+
+
+  @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin-top: -260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #000000;
+}
+
+.content h2:nth-child(2) {
+  color: #d8d6eb;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
